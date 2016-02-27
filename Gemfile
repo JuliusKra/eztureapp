@@ -17,6 +17,16 @@ group :development, :test do
   gem 'byebug'
 end
 
+group :development, :test do
+  gem 'sqlite3'
+  gem 'pry'
+end
+
+group :production do
+  gem 'pg'
+  gem 'rails_12factor'
+end
+
 group :development do
 
   gem 'web-console', '~> 2.0'
