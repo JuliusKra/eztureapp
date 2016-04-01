@@ -21,7 +21,6 @@ $navbar-default-color: $light-orange;
 
 #logo:hover {
   color: #000000;
-  text-decoration: underline;
 }
 
 body {
@@ -79,7 +78,7 @@ h2 {
 }
 
 .well {
-  background-color: #EDEDED;
+  background-color: #d8fafb;
 }
 
 input, textarea, select, .uneditable-input {
@@ -108,4 +107,15 @@ span.picture {
 
 .show_recipe {
   margin: 10px 10px 10px 10px;
+}
+
+.jumbotron {
+  background-color: #FFE8EC;
+}
+
+#flash {
+  display:none;
+  text-align: center;
+  font-weight: bold;
+
 }

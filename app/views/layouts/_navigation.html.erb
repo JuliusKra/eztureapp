@@ -1,21 +1,23 @@
-<header class="navbar navbar-fixed-top navbar-default">
+<header class="navbar navbar-fixed-top navbar-default navbar-md">
    <div class="container">
-     <%= link_to "Track-it", root_path, class: "btn btn-lg btn-success", id: "logo"%>
+     <%= link_to "Track-it", root_path, class: "btn btn-lg btn-success", id: "logo" %>
      <div class="nav-item">
-       <%= link_to "link 1", "", class: "btn btn-default btn-warning" %>
+       <%= link_to "link 1", "", class: "btn btn-default btn-warning btn-sm" %>
      </div>
      <div class="nav-item">
-      <%= link_to "link 1", "", class: "btn btn-default btn-warning" %>
+      <%= link_to "link 1", "", class: "btn btn-default btn-warning btn-sm" %>
      </div>
-    <div class="nav-item">
-      <%= link_to "new request", new_recipe_path, class: "btn btn-default btn-warning" %>
-    </div>
+     <% if logged_in? %>
+      <div class="nav-item">
+        <%= link_to "new request", new_recipe_path, class: "btn btn-default btn-warning btn-sm" %>
+      </div>
+       <div class="nav-item">
+        <%= link_to "Logout", logout_path, class: "btn btn-default btn-danger btn-sm" %>
+      </div>
+    <% else %>
+      <div class="nav-item">
+        <%= link_to "Log in", login_path, class: "btn btn-default btn-warning btn-sm" %>
+      </div>
+    <% end %>  
   </div>
 </header>
-<nav class="navbar navbar-inverse">
-  <div class="container">
-    <div class="nav-item">
-      <%= link_to "new request", new_recipe_path, class: "btn btn-sm btn-success" %>
-    </div>
-  </div>
-</nav>
