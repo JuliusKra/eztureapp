@@ -5,6 +5,10 @@ $navbar-default-color: $light-orange;
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+.container {
+  padding-left: 25px;
+}
+
 #logo {
   margin-top: 10px;
   margin-bottom: 10px;
@@ -128,4 +132,3 @@ span.picture {
   font-size: 14px;
 
 }
-
